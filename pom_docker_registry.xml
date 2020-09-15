@@ -60,15 +60,15 @@
                     </imageTags>
                     <registryUrl>49.235.149.109:5000</registryUrl>
                         <pushImage>true</pushImage>
-                        <imageName>49.235.149.109:5000/${project.artifactId}:${project.version}
+                        <imageName>49.235.149.109:5000/${project.artifactId}
                     </imageName>
-                    <imageName>${project.artifactId}:${project.version}</imageName>
+                    <imageName>${project.artifactId}</imageName>
                     <!--构建镜像的配置信息-->
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
                             <directory>${project.build.directory}</directory>
-                            <include>${project.artifactId}-${project.version}.jar</include>
+                            <include>${project.artifactId}.jar</include>
                         </resource>
                     </resources>
                 </configuration>
