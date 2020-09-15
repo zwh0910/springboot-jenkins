@@ -51,7 +51,7 @@
                 <!--docker镜像相关的配置信息-->
                 <configuration>
                     <!--镜像名，这里用工程名-->
-                    <imageName>${project.artifactId}-${project.version}</imageName>
+                    <imageName>${project.artifactId}</imageName>
                     <!--Dockerfile文件所在目录-->
                     <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
                     <!--TAG,这里用工程版本号-->
