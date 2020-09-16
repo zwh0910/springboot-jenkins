@@ -19,12 +19,12 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
         <!--移除内嵌的tomcat-->
-        <exclusions>
-            <exclusion>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-            </exclusion>
-        </exclusions>
+<!--        <exclusions>-->
+<!--            <exclusion>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--            </exclusion>-->
+<!--        </exclusions>-->
     </dependency>
         <!--servlet的 api-->
         <dependency>
