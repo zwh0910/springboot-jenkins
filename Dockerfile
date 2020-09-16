@@ -8,5 +8,14 @@ ADD target/demo.war /usr/local/tomcat/webapps
 WORKDIR /usr/local/tomcat/conf/
 #设置tomcat的启动端口
 RUN sed -i 's|"8080"|"9020"|' server.xml
-RUN sed -i 's|"8080"|"9020"|' server.xml
+
+
+
+
+
+
+
+
+
+
 
