@@ -53,7 +53,7 @@
                     <!--镜像名，这里用工程名-->
                     <imageName>${project.artifactId}</imageName>
                     <!--Dockerfile文件所在目录-->
-                    <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
+                    <dockerDirectory>${project.basedir}</dockerDirectory>
                     <!--TAG,这里用工程版本号-->
                     <imageTags>
                         <imageTag>${project.version}</imageTag>

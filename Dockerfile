@@ -1,14 +1,13 @@
-#ÉèÖÃtomcat¾µÏñ
+#è®¾ç½®tomcaté•œåƒ
 FROM daocloud.io/library/tomcat:8.5.15-jre8
-#É¾³ıwebappsÏÂÃæÖ®Ç°µÄwar°ü
+#åˆ é™¤webappsä¸‹é¢ä¹‹å‰çš„waråŒ…
 RUN rm -rf /usr/local/tomcat/webapps/*.war
-#°ÑĞÂµÄwar°ü·ÅwebappsÏÂÃæ
-ADD target/demo.war /usr/local/tomcat/webapps
-#ÇĞ»»µ½Ö¸¶¨Ä¿Â¼,Èç¹û²»ĞèÒªĞŞ¸Ä¶Ë¿ÚºÅ¿É²»¼ÓÕâÁ½ĞĞ
-#WORKDIR /usr/local/tomcat/conf/
-#ÉèÖÃtomcatµÄÆô¶¯¶Ë¿Ú
-#RUN sed -i 's|"8080"|"9020"|' server.xml
-
+#æŠŠæ–°çš„waråŒ…æ”¾webappsä¸‹é¢
+ADD target/springboot.war /usr/local/tomcat/webapps
+#åˆ‡æ¢åˆ°æŒ‡å®šç›®å½•,å¦‚æœä¸éœ€è¦ä¿®æ”¹ç«¯å£å·å¯ä¸åŠ è¿™ä¸¤è¡Œ
+WORKDIR /usr/local/tomcat/conf/
+#è®¾ç½®tomcatçš„å¯åŠ¨ç«¯å£
+RUN sed -i 's|"8080"|"9020"|' server.xml
 
 
 
